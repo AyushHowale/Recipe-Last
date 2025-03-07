@@ -1,0 +1,74 @@
+.hero-slider {
+    width: 150vw; /* Ensure full viewport width */
+    height: 90vh; /* Adjust height for better visibility */
+    overflow: hidden;
+}
+
+.slider-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slider-image {
+    width: 150vw; /* Full viewport width */
+    height: 90vh; /* Increase height */
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Content Overlay */
+.slider-content {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    color: white;
+    font-size: 2.5rem; /* Increase text size */
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .slider-image {
+        width: 100vw; /* Ensure full width on tablets */
+        height: 70vh; /* Adjust height */
+    }
+
+    .slider-content {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .slider-image {
+        width: 100vw; /* Maintain full width */
+        height: 60vh; /* Adjust height */
+    }
+
+    .slider-content {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .slider-image {
+        width: 100vw; /* Keep full width on mobile */
+        height: 50vh; /* Adjust height */
+    }
+
+    .slider-content {
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+}
